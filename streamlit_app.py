@@ -102,7 +102,7 @@ def main():
             st.success("✅ Done!")
 
             st.markdown(
-                f"""
+                """
                 <style>
                 .result {
                     margin: 20px 0;
