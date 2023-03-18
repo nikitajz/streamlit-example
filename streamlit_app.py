@@ -89,11 +89,44 @@ def main():
 
             st.success("✅ Done!")
 
-            with open("src/search_results.css") as fp:
-                search_style = fp.read()
-
             st.markdown(
-                f"<style>{search_style}</style>",
+                f"""<style>
+                .result {
+                    margin: 20px 0;
+                    padding: 20px;
+                    background-color: #f8f8f8;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+                }
+                .title {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    margin: 0 0 10px 0;
+                }
+
+                .pub_date {
+                    font-size: 0.9rem;
+                    color: #666;
+                    margin: 0;
+                }
+
+                .score {
+                    font-size: 0.9rem;
+                    color: #666;
+                    margin: 0;
+                }
+                .podcast {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    margin: 0 0 10px 0;
+                }
+                .text {
+                    font-size: 1rem;
+                    margin: 10px 0 0 0;
+                    line-height: 1.5;
+                }
+
+                </style>""",
                 unsafe_allow_html=True,
             )
 
