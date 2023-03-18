@@ -14,7 +14,6 @@ COHERE_API_KEY = os.environ["COHERE_API_KEY"]
 RESULT_LIMIT = 5
 INDEX_NAME = "podcasts"
 
-search_client = SearchClient(collection_name=INDEX_NAME)
 
 st.set_page_config(layout="wide")
 
@@ -59,6 +58,9 @@ class SearchClient:
             limit=limit,
         )
 
+search_client = SearchClient(collection_name=INDEX_NAME)
+
+    
 def main():
     st.header("Find podcast episode")
     st.markdown(
