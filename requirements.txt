@@ -1,3 +1,4 @@
-altair
-pandas
-streamlit
+cohere==3.10.0
+qdrant-client==1.0.4
+streamlit==1.20.0
+click<=8.0.4
