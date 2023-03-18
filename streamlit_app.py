@@ -44,6 +44,10 @@ class SearchClient:
         if create_index:
             self._create_index(embedding_dimension, distance)
 
+    # Qdrant requires data in float format
+    def _float_vector(self, vector: List[float]):
+        return list(map(float, vector))
+
     # Embedding using Cohere Embed model
     def _embed(self, texts: Union[str, List[str]], retry=0, timeout=10):
         try:
