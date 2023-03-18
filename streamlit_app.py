@@ -2,12 +2,10 @@ import logging
 import os
 
 import streamlit as st
-from dotenv import load_dotenv
 
 
 logger = logging.getLogger(__name__)
 
-load_dotenv()
 
 QDRANT_API_KEY = os.environ["QDRANT_API_KEY"]
 QDRANT_URL = os.environ["QDRANT_HOST"]
