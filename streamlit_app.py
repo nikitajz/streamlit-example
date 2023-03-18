@@ -2,6 +2,8 @@ import logging
 import os
 
 import streamlit as st
+from qdrant_client.http import models
+from qdrant_client import QdrantClient
 
 
 logger = logging.getLogger(__name__)
