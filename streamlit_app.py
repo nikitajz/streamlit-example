@@ -102,7 +102,8 @@ def main():
             st.success("✅ Done!")
 
             st.markdown(
-                f"""<style>
+                f"""
+                <style>
                 .result {
                     margin: 20px 0;
                     padding: 20px;
@@ -137,9 +138,9 @@ def main():
                     margin: 10px 0 0 0;
                     line-height: 1.5;
                 }
-
-                </style>""",
-                unsafe_allow_html=True,
+                </style>
+                """,
+                unsafe_allow_html=True
             )
 
             search_results_md = " ".join(
