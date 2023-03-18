@@ -13,6 +13,7 @@ COHERE_API_KEY = os.environ["COHERE_API_KEY"]
 
 RESULT_LIMIT = 5
 INDEX_NAME = "podcasts"
+COHERE_SIZE_VECTOR = 1024
 
 
 st.set_page_config(layout="wide")
