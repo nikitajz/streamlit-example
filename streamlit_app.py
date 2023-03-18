@@ -3,6 +3,8 @@ import os
 from typing import Dict, List, Union
 
 import streamlit as st
+
+import cohere
 from qdrant_client.http import models
 from qdrant_client import QdrantClient
 
