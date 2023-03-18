@@ -14,6 +14,8 @@ COHERE_API_KEY = os.environ["COHERE_API_KEY"]
 RESULT_LIMIT = 5
 INDEX_NAME = "podcasts"
 COHERE_SIZE_VECTOR = 1024
+COHERE_MODEL = "small" # should match embedding size
+QDRANT_DISTANCE = models.Distance.COSINE
 
 
 st.set_page_config(layout="wide")
