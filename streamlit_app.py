@@ -32,7 +32,7 @@ class SearchClient:
         cohere_api_key: str = COHERE_API_KEY,
         create_index: bool = False,
         embedding_dimension: int=COHERE_SIZE_VECTOR, 
-        distance: Literal[models.Distance]=QDRANT_DISTANCE
+        distance: models.Distance=QDRANT_DISTANCE
     ):
         self.qdrant_client = QdrantClient(url=qdrant_url, api_key=qdrabt_api_key)
         self.collection_name = collection_name
